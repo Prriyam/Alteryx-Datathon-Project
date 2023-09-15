@@ -1,0 +1,2232 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`G.L_21$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Disney Data.xlsx
+Query=`G.L_21$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Company code" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`G.L_21$`" type="V_String" />
+            <Field name="Entity Name" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`G.L_21$`" type="V_String" />
+            <Field name="Account number" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`G.L_21$`" type="V_String" />
+            <Field name="Account Class" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`G.L_21$`" type="V_String" />
+            <Field name="2021" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`G.L_21$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Company code" selected="True" />
+            <SelectField field="Entity Name" selected="True" />
+            <SelectField field="Account number" selected="True" />
+            <SelectField field="Account Class" selected="True" />
+            <SelectField field="2021" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Disney Data.xlsx
+Query=`Entity Master Data.21$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Company code" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" />
+            <Field name="LE CODE" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" />
+            <Field name="Entity Name" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" />
+            <Field name="Tax Jurisdiction" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" />
+            <Field name="Tax ID" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" />
+            <Field name="Address Line 1" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_WString" />
+            <Field name="City" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" />
+            <Field name="Province" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" />
+            <Field name="Postal Code" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="546" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Company code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Company code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Company code" selected="False" rename="Right_Company code" input="Right_" />
+                <SelectField field="Right_Entity Name" selected="False" rename="Right_Entity Name" input="Right_" />
+                <SelectField field="Left_CC" selected="False" input="Left_" />
+                <SelectField field="Left_EN" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Company code" selected="True" />
+            <SelectField field="Entity Name" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="666" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Entity Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Entity Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Company code" selected="False" rename="Right_Company code" input="Right_" />
+                <SelectField field="Right_Entity Name" selected="False" rename="Right_Entity Name" input="Right_" />
+                <SelectField field="Left_CC" selected="False" input="Left_" />
+                <SelectField field="Left_EN" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="738" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Income Tax Paid.Accrued.21$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Disney Data.xlsx
+Query=`Income Tax Paid.Accrued.21$...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="LE Code" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Income Tax Paid.Accrued.21$`" type="V_String" />
+            <Field name="Income Tax Paid(on Cash Basis)&#xA;" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Income Tax Paid.Accrued.21$`" type="Double" />
+            <Field name="Income Tax Accrued - Current Year" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Income Tax Paid.Accrued.21$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings>
+        <Position x="174" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"LE Code","Income Tax Paid(on Cash Basis)
+","Income Tax Accrued - Current Year"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="LE Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Company code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Income Tax Paid(on Cash Basis)&#xA;" selected="True" input="Left_" />
+                <SelectField field="Left_Income Tax Accrued - Current Year" selected="True" input="Left_" />
+                <SelectField field="Right_Tax Jurisdiction" selected="True" input="Right_" />
+                <SelectField field="Right_Coutnry (ISO)" selected="True" input="Right_" />
+                <SelectField field="Right_Company code" selected="True" input="Right_" />
+                <SelectField field="Right_LE CODE" selected="True" input="Right_" />
+                <SelectField field="Right_Entity Name" selected="True" input="Right_" />
+                <SelectField field="Right_Tax ID" selected="True" input="Right_" />
+                <SelectField field="Right_Address Line 1" selected="True" input="Right_" />
+                <SelectField field="Right_City" selected="True" input="Right_" />
+                <SelectField field="Right_State" selected="True" input="Right_" />
+                <SelectField field="Right_Province" selected="True" input="Right_" />
+                <SelectField field="Right_Postal Code" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="582" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="Income Tax Paid(on Cash Basis)&#xA;" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`Income Tax Paid.Accrued.21$`" type="Double" column="1" />
+                <Field name="Income Tax Accrued - Current Year" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`Income Tax Paid.Accrued.21$`" type="Double" column="2" />
+                <Field name="Tax Jurisdiction" size="255" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`ISO Map$`" type="V_String" column="3" />
+                <Field name="Coutnry (ISO)" size="255" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`ISO Map$`" type="V_String" column="4" />
+                <Field name="Company code" size="255" source="Formula: [_CurrentField_]" type="V_String" column="5" />
+                <Field name="LE CODE" size="255" source="Formula: [_CurrentField_]" type="V_String" column="6" />
+                <Field name="Entity Name" size="255" source="Formula: [_CurrentField_]" type="V_String" column="7" />
+                <Field name="Tax ID" size="255" source="Formula: [_CurrentField_]" type="V_String" column="8" />
+                <Field name="Address Line 1" size="255" source="Formula: [_CurrentField_]" type="V_WString" column="9" />
+                <Field name="City" size="255" source="Formula: [_CurrentField_]" type="V_String" column="10" />
+                <Field name="State" size="255" source="Formula: [_CurrentField_]" type="V_String" column="11" />
+                <Field name="Province" size="255" source="Formula: [_CurrentField_]" type="V_String" column="12" />
+                <Field name="Postal Code" size="255" source="Formula: [_CurrentField_]" type="V_String" column="13" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="Income Tax Paid(on Cash Basis)&#xA;" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`Income Tax Paid.Accrued.21$`" type="Double" column="1" />
+                <Field name="Income Tax Accrued - Current Year" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`Income Tax Paid.Accrued.21$`" type="Double" column="2" />
+                <Field name="Tax Jurisdiction" size="255" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`ISO Map$`" type="V_String" column="3" />
+                <Field name="Coutnry (ISO)" size="255" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`ISO Map$`" type="V_String" column="4" />
+                <Field name="Company code" size="255" source="Formula: [_CurrentField_]" type="V_String" column="5" />
+                <Field name="LE Code" size="255" source="Formula: [_CurrentField_]" type="V_String" column="6" />
+                <Field name="Entity Name" size="255" source="Formula: [_CurrentField_]" type="V_String" column="7" />
+                <Field name="Tax ID" size="255" source="Formula: [_CurrentField_]" type="V_String" column="8" />
+                <Field name="Address Line 1" size="255" source="Formula: [_CurrentField_]" type="V_WString" column="9" />
+                <Field name="City" size="255" source="Formula: [_CurrentField_]" type="V_String" column="10" />
+                <Field name="State" size="255" source="Formula: [_CurrentField_]" type="V_String" column="11" />
+                <Field name="Province" size="255" source="Formula: [_CurrentField_]" type="V_String" column="12" />
+                <Field name="Postal Code" size="255" source="Formula: [_CurrentField_]" type="V_String" column="13" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="558" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Headcount.21$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Disney Data.xlsx
+Query=`Headcount.21$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Company Code" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Headcount.21$`" type="V_String" />
+            <Field name="COUNTRY_KEY" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Headcount.21$`" type="V_String" />
+            <Field name="EMPLOYEE_GROUP" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Headcount.21$`" type="V_String" />
+            <Field name="MANAGEMENT_LEVEL" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Headcount.21$`" type="V_String" />
+            <Field name="TIME_TYPE" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Headcount.21$`" type="V_String" />
+            <Field name="HEADCOUNT" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Headcount.21$`" type="Double" />
+            <Field name="LEGAL_ENTITY_NAME" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Headcount.21$`" type="V_String" />
+            <Field name="LE_CODE" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Headcount.21$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings>
+        <Position x="678" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Company Code","COUNTRY_KEY","EMPLOYEE_GROUP","MANAGEMENT_LEVEL","TIME_TYPE","HEADCOUNT","LEGAL_ENTITY_NAME","LE_CODE"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1314" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="LE_CODE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="LE CODE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Company code" selected="True" input="Right_" />
+                <SelectField field="Left_LE_CODE" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_HEADCOUNT" selected="True" input="Left_" description="C00080" />
+                <SelectField field="Right_Income Tax Paid(on Cash Basis)&#xA;" selected="True" input="Right_" description="C00040" />
+                <SelectField field="Right_Income Tax Accrued - Current Year" selected="True" input="Right_" description="C00050" />
+                <SelectField field="Right_LE CODE" selected="True" input="Right_" />
+                <SelectField field="Right_Entity Name" selected="True" input="Right_" />
+                <SelectField field="Right_Tax Jurisdiction" selected="True" input="Right_" />
+                <SelectField field="Right_Tax ID" selected="True" input="Right_" />
+                <SelectField field="Right_Address Line 1" selected="True" input="Right_" />
+                <SelectField field="Right_City" selected="True" input="Right_" />
+                <SelectField field="Right_State" selected="True" input="Right_" />
+                <SelectField field="Right_Province" selected="True" input="Right_" />
+                <SelectField field="Right_Postal Code" selected="True" input="Right_" />
+                <SelectField field="Right_LE_CODE" selected="False" input="Right_" />
+                <SelectField field="Right_Coutnry (ISO)" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="294" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="LE Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="LE CODE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_LE Code" selected="True" input="Left_" />
+                <SelectField field="Left_Income Tax Paid(on Cash Basis)&#xA;" selected="True" input="Left_" />
+                <SelectField field="Left_Income Tax Accrued - Current Year" selected="True" input="Left_" />
+                <SelectField field="Right_Tax Jurisdiction" selected="True" input="Right_" />
+                <SelectField field="Right_Coutnry (ISO)" selected="True" input="Right_" />
+                <SelectField field="Right_Company code" selected="True" input="Right_" />
+                <SelectField field="Right_Entity Name" selected="True" input="Right_" />
+                <SelectField field="Right_Tax ID" selected="True" input="Right_" />
+                <SelectField field="Right_Address Line 1" selected="True" input="Right_" />
+                <SelectField field="Right_City" selected="True" input="Right_" />
+                <SelectField field="Right_State" selected="True" input="Right_" />
+                <SelectField field="Right_Province" selected="True" input="Right_" />
+                <SelectField field="Right_Postal Code" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="762" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="LE_CODE" action="GroupBy" rename="LE_CODE" />
+            <SummarizeField field="HEADCOUNT" action="Sum" rename="Sum_HEADCOUNT" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="906" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`CbyC Column Sign Key$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Disney Data.xlsx
+Query=`CbyC Column Sign Key$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CbyC Column Code" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`CbyC Column Sign Key$`" type="V_String" />
+            <Field name="CbyC Column Description" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`CbyC Column Sign Key$`" type="V_String" />
+            <Field name="Multiplier" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`CbyC Column Sign Key$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1086" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CbyC Column Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CbyC Column Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_CbyC Column Code" selected="False" rename="Right_CbyC Column Code" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1218" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CBC HIERARCHY GROUP" selected="False" />
+            <SelectField field="Right_CbyC Column Code" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1326" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[2021]*[Multiplier]" field="2021" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[2021 = [2021]*[Multiplier]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="894" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CORP TAX CBC ACCOUNT" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="798" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Account number" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CORP TAX CBC ACCOUNT" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Account number" selected="True" input="Left_" size="21" />
+                <SelectField field="Left_Account Class" selected="False" input="Left_" />
+                <SelectField field="Right_CORP TAX CBC ACCOUNT" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="438" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`CBC Account Map$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Disney Data.xlsx
+Query=`CBC Account Map$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CORP TAX CBC ACCOUNT" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`CBC Account Map$`" type="V_String" />
+            <Field name="CBC HIERARCHY GROUP" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`CBC Account Map$`" type="V_WString" />
+            <Field name="CbyC Column Code" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`CBC Account Map$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Disney Data.xlsx
+Query=`Entity Attributes.21$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="F1" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Research and Development" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Holding or Managing Intellectual Property" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Purchasing or Procurement" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Manufacturing or Production" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Sales, Marketing or Distribution" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Administrative Management or Support Services" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Provision of Services to Unrelated Parties" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Internal Group Finance" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Regulated Financial Services" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Insurance" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Holding Share or Other Equity Instruments" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Dormant " size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+            <Field name="Other" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`Entity Attributes.21$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings>
+        <Position x="222" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"F1","Research and Development","Holding or Managing Intellectual Property","Purchasing or Procurement","Manufacturing or Production","Sales, Marketing or Distribution","Administrative Management or Support Services","Provision of Services to Unrelated Parties","Internal Group Finance","Regulated Financial Services","Insurance","Holding Share or Other Equity Instruments","Dormant ","Other"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="342" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Skip</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Skip 1st 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="F1" selected="True" rename="LE Code" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2430" y="882" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="LE CODE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="LE Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Company code" selected="True" input="Left_" />
+                <SelectField field="Left_LE CODE" selected="True" input="Left_" />
+                <SelectField field="Left_Tax Jurisdiction" selected="True" input="Left_" />
+                <SelectField field="Left_Coutnry (ISO)" selected="True" input="Left_" />
+                <SelectField field="Left_Entity Name" selected="True" input="Left_" />
+                <SelectField field="Right_Research and Development" selected="True" input="Right_" />
+                <SelectField field="Right_Holding or Managing Intellectual Property" selected="True" input="Right_" />
+                <SelectField field="Right_Purchasing or Procurement" selected="True" input="Right_" />
+                <SelectField field="Right_Manufacturing or Production" selected="True" input="Right_" />
+                <SelectField field="Right_Sales, Marketing or Distribution" selected="True" input="Right_" />
+                <SelectField field="Right_Administrative Management or Support Services" selected="True" input="Right_" />
+                <SelectField field="Right_Provision of Services to Unrelated Parties" selected="True" input="Right_" />
+                <SelectField field="Right_Internal Group Finance" selected="True" input="Right_" />
+                <SelectField field="Right_Regulated Financial Services" selected="True" input="Right_" />
+                <SelectField field="Right_Insurance" selected="True" input="Right_" />
+                <SelectField field="Right_Holding Share or Other Equity Instruments" selected="True" input="Right_" />
+                <SelectField field="Right_Dormant " selected="True" input="Right_" />
+                <SelectField field="Right_Other" selected="True" input="Right_" />
+                <SelectField field="Left_Unrelated_Party_Revenue" selected="True" input="Left_" />
+                <SelectField field="Left_Related_Party_Revenue" selected="True" input="Left_" />
+                <SelectField field="Left_Total Revenue" selected="True" input="Left_" />
+                <SelectField field="Left_Profit (loss) before Income Tax" selected="True" input="Left_" />
+                <SelectField field="Left_Income_Tax_Paid" selected="True" input="Left_" />
+                <SelectField field="Left_Income Tax Accrued - Current Year" selected="True" input="Left_" />
+                <SelectField field="Left_Stated_Capital" selected="True" input="Left_" />
+                <SelectField field="Left_Accumulated_Earnings" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_HEADCOUNT" selected="True" rename="Number of Employees" input="Left_" />
+                <SelectField field="Left_Tangible_Assets" selected="True" input="Left_" />
+                <SelectField field="Left_Total Accumilated Earnings " selected="False" input="Left_" />
+                <SelectField field="Left_P_L_Expense_before_Tax" selected="False" input="Left_" />
+                <SelectField field="Left_Income Tax Paid(on Cash Basis)&#xA;" selected="True" input="Left_" />
+                <SelectField field="Left_Tax ID" selected="False" input="Left_" />
+                <SelectField field="Left_Address Line 1" selected="True" input="Left_" />
+                <SelectField field="Left_City" selected="True" input="Left_" />
+                <SelectField field="Left_State" selected="True" input="Left_" />
+                <SelectField field="Left_Province" selected="True" input="Left_" />
+                <SelectField field="Left_Postal Code" selected="True" input="Left_" />
+                <SelectField field="Right_LE Code" selected="False" rename="Right_LE Code" input="Right_" />
+                <SelectField field="Left_Total Accumilated Earnings" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1386" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Company code" />
+          </GroupFields>
+          <HeaderField field="CbyC Column Description" />
+          <DataField field="2021" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Company code" size="255" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Accumulated_Earnings" source="CrossTab:Header:CbyC Column Description:Accumulated Earnings:Sum:" type="Double" />
+            <Field name="Income_Tax_Paid" source="CrossTab:Header:CbyC Column Description:Income Tax Paid:Sum:" type="Double" />
+            <Field name="P_L_Expense_before_Tax" source="CrossTab:Header:CbyC Column Description:P&amp;L Expense before Tax:Sum:" type="Double" />
+            <Field name="Related_Party_Revenue" source="CrossTab:Header:CbyC Column Description:Related Party Revenue:Sum:" type="Double" />
+            <Field name="Stated_Capital" source="CrossTab:Header:CbyC Column Description:Stated Capital:Sum:" type="Double" />
+            <Field name="Tangible_Assets" source="CrossTab:Header:CbyC Column Description:Tangible Assets:Sum:" type="Double" />
+            <Field name="Unrelated_Party_Revenue" source="CrossTab:Header:CbyC Column Description:Unrelated Party Revenue:Sum:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings>
+        <Position x="222" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Company code","LE CODE","Entity Name","Tax Jurisdiction","Tax ID","Address Line 1","City","State","Province","Postal Code"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings>
+        <Position x="222" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Company code","Entity Name","Account number","Account Class","2021"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings>
+        <Position x="1506" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Accumulated_Earnings","Income_Tax_Paid","P_L_Expense_before_Tax","Related_Party_Revenue","Stated_Capital","Tangible_Assets","Unrelated_Party_Revenue"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings>
+        <Position x="558" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"CORP TAX CBC ACCOUNT","CBC HIERARCHY GROUP","CbyC Column Code"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2142" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Company code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Company code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_LE CODE" selected="True" input="Right_" />
+                <SelectField field="Right_Coutnry (ISO)" selected="True" input="Right_" />
+                <SelectField field="Left_Company code" selected="True" input="Left_" />
+                <SelectField field="Left_Total Accumilated Earnings " selected="True" input="Left_" />
+                <SelectField field="Left_Accumulated_Earnings" selected="True" input="Left_" />
+                <SelectField field="Left_Income_Tax_Paid" selected="True" input="Left_" />
+                <SelectField field="Left_P_L_Expense_before_Tax" selected="True" input="Left_" />
+                <SelectField field="Left_Related_Party_Revenue" selected="True" input="Left_" />
+                <SelectField field="Left_Stated_Capital" selected="True" input="Left_" />
+                <SelectField field="Left_Tangible_Assets" selected="True" input="Left_" />
+                <SelectField field="Left_Unrelated_Party_Revenue" selected="True" input="Left_" />
+                <SelectField field="Right_Company code" selected="False" rename="Right_Company code" input="Right_" />
+                <SelectField field="Right_Sum_HEADCOUNT" selected="True" input="Right_" />
+                <SelectField field="Right_Income Tax Paid(on Cash Basis)&#xA;" selected="True" input="Right_" />
+                <SelectField field="Right_Income Tax Accrued - Current Year" selected="True" input="Right_" />
+                <SelectField field="Right_Entity Name" selected="True" input="Right_" />
+                <SelectField field="Right_Tax Jurisdiction" selected="True" input="Right_" />
+                <SelectField field="Right_Tax ID" selected="True" input="Right_" />
+                <SelectField field="Right_Address Line 1" selected="True" input="Right_" />
+                <SelectField field="Right_City" selected="True" input="Right_" />
+                <SelectField field="Right_State" selected="True" input="Right_" />
+                <SelectField field="Right_Province" selected="True" input="Right_" />
+                <SelectField field="Right_Postal Code" selected="True" input="Right_" />
+                <SelectField field="Left_CbyC Column Code" selected="True" input="Left_" />
+                <SelectField field="Left_Total Revenue" selected="True" input="Left_" />
+                <SelectField field="Left_Total Accumilated Earnings" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="107">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="318" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Tax Jurisdiction]=&quot;Iberia&quot; THEN &quot;Spain&quot; ELSE [Tax Jurisdiction] ENDIF" field="Tax Jurisdiction" size="255" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Tax Jurisdiction = IF [Tax Jurisdiction]="Iberia" THEN "Spain" ELSE [Tax Jurisdi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="110">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="714" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="112">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1266" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Account number]&gt;="400000"
+AND
+[Account number]&lt;="899999"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Account number]&gt;="400000"
+AND
+[Account number]&lt;="899999"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="534" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Replace([Research and Development], 'x', '1')" field="Research and Development" size="255" type="V_String" />
+            <FormulaField expression="IF [Holding or Managing Intellectual Property]='X' THEN '1' ELSE [Holding or Managing Intellectual Property] ENDIF" field="Holding or Managing Intellectual Property" size="255" type="V_String" />
+            <FormulaField expression="IF [Purchasing or Procurement]='X' THEN '1' ELSE [Purchasing or Procurement] ENDIF" field="Purchasing or Procurement" size="255" type="V_String" />
+            <FormulaField expression="IF [Manufacturing or Production]='X' THEN '1' ELSE [Manufacturing or Production] ENDIF" field="Manufacturing or Production" size="255" type="V_String" />
+            <FormulaField expression="IF [Sales, Marketing or Distribution]='X' THEN '1' ELSE [Sales, Marketing or Distribution] ENDIF" field="Sales, Marketing or Distribution" size="255" type="V_String" />
+            <FormulaField expression="IF [Administrative Management or Support Services]='X' THEN '1' ELSE [Administrative Management or Support Services] ENDIF" field="Administrative Management or Support Services" size="255" type="V_String" />
+            <FormulaField expression="IF [Provision of Services to Unrelated Parties]='X' THEN '1' ELSE [Provision of Services to Unrelated Parties] ENDIF" field="Provision of Services to Unrelated Parties" size="255" type="V_String" />
+            <FormulaField expression="IF [Internal Group Finance]='X' THEN '1' ELSE [Internal Group Finance] ENDIF" field="Internal Group Finance" size="255" type="V_String" />
+            <FormulaField expression="IF [Regulated Financial Services]='X' THEN '1' ELSE [Regulated Financial Services] ENDIF" field="Regulated Financial Services" size="255" type="V_String" />
+            <FormulaField expression="IF [Insurance]='X' THEN '1' ELSE [Insurance] ENDIF" field="Insurance" size="255" type="V_String" />
+            <FormulaField expression="IF [Holding Share or Other Equity Instruments]='X' THEN '1' ELSE [Holding Share or Other Equity Instruments] ENDIF" field="Holding Share or Other Equity Instruments" size="255" type="V_String" />
+            <FormulaField expression="IF [Dormant ]='X' THEN '1' ELSE [Dormant ] ENDIF&#xA;" field="Dormant " size="255" type="V_String" />
+            <FormulaField expression="IF [Other]='X' THEN '1' ELSE [Other] ENDIF" field="Other" size="255" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Research and Development = Replace([Research and Development], 'x', '1')
+Holding...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="18" y="294" width="120" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Workfkow 1</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="678" y="174" width="216" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Replacing Null values in GL by joining  the data from Entity master data</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="117">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="726" y="402" width="168" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Mapping GL to CbC Column Accounts</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="121">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1434" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[CbyC Column Code]='C00035'</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[CbyC Column Code]='C00035'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="123">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1566" y="126" width="156" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filtering Profit and Loss Expense before Tax - C00035</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="126">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1758" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Company code" action="GroupBy" rename="Company code" />
+            <SummarizeField field="2021" action="Sum" rename="Total Accumilated Earnings" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="127">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1638" y="402" width="144" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filtering Accumulated earnings - C00070</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="128">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="630" width="100" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Workflow 2</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="129">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="258" y="834" width="108" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Correcting the incorrect Le Code by joining with Master entity</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="131">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="522" y="822" width="144" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Joining Income Tax Paid.Accured  and entity master data</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="132">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1950" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Company code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Company code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Company code" selected="False" rename="Right_Company code" input="Right_" />
+                <SelectField field="Left_Total Accumilated Earnings " selected="False" rename="Profit (loss) before Income Tax" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="133">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="294" y="1050" width="144" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Calculating the Entity Attributes</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="139">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`ISO Map$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Disney Data.xlsx
+Query=`ISO Map$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tax Jurisdiction" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`ISO Map$`" type="V_String" />
+            <Field name="Coutnry (ISO)" size="255" source="File: C:\Users\14699\Downloads\Disney Use Case\Disney Data.xlsx|||`ISO Map$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="140">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="414" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Tax Jurisdiction" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Tax Jurisdiction" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Tax Jurisdiction" selected="False" rename="Right_Tax Jurisdiction" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="141">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="642" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="LE Code" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="145">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2334" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="LE CODE" selected="True" />
+            <SelectField field="Coutnry (ISO)" selected="True" />
+            <SelectField field="Company code" selected="True" />
+            <SelectField field="Total Accumilated Earnings " selected="True" />
+            <SelectField field="Accumulated_Earnings" selected="True" />
+            <SelectField field="Income_Tax_Paid" selected="True" />
+            <SelectField field="P_L_Expense_before_Tax" selected="True" />
+            <SelectField field="Related_Party_Revenue" selected="True" />
+            <SelectField field="Total Revenue" selected="True" />
+            <SelectField field="Stated_Capital" selected="True" />
+            <SelectField field="Tangible_Assets" selected="True" />
+            <SelectField field="Unrelated_Party_Revenue" selected="True" />
+            <SelectField field="Sum_HEADCOUNT" selected="True" />
+            <SelectField field="Income Tax Paid(on Cash Basis)&#xA;" selected="False" />
+            <SelectField field="Income Tax Accrued - Current Year" selected="True" />
+            <SelectField field="Entity Name" selected="True" />
+            <SelectField field="Tax Jurisdiction" selected="True" />
+            <SelectField field="Tax ID" selected="True" />
+            <SelectField field="Address Line 1" selected="True" />
+            <SelectField field="City" selected="True" />
+            <SelectField field="State" selected="True" />
+            <SelectField field="Province" selected="True" />
+            <SelectField field="Postal Code" selected="True" />
+            <SelectField field="Profit (loss) before Income Tax" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="146">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2238" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Income_Tax_Paid]+[Income Tax Paid(on Cash Basis)&#xA;]" field="Income_Tax_Paid" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Income_Tax_Paid = [Income_Tax_Paid]+[Income Tax Paid(on Cash Basis)
+]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="147">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1530" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[CbyC Column Code]='C00070'</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[CbyC Column Code]='C00070'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="148">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2694" y="930" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\14699\Downloads\Disney Use Case\FinalOutput.xlsx|||OutputTaxation</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FinalOutput.xlsx
+Query=OutputTaxation</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="150">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1626" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="Company code" size="255" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" column="1" />
+                <Field name="Entity Name" size="255" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" column="2" />
+                <Field name="Account number" size="21" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`G.L_21$`" type="V_String" column="3" />
+                <Field name="2021" source="Formula: [2021]*[Multiplier]" type="Double" column="4" />
+                <Field name="CbyC Column Code" size="255" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_String" column="5" />
+                <Field name="CbyC Column Description" size="255" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`CbyC Column Sign Key$`" type="V_String" column="6" />
+                <Field name="Multiplier" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`CbyC Column Sign Key$`" type="Double" column="7" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="Company code" size="255" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" column="1" />
+                <Field name="Entity Name" size="255" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`Entity Master Data.21$`" type="V_String" column="2" />
+                <Field name="Account number" size="21" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`G.L_21$`" type="V_String" column="3" />
+                <Field name="2021" source="Formula: [2021]*[Multiplier]" type="Double" column="4" />
+                <Field name="CbyC Column Code" size="255" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_String" column="5" />
+                <Field name="CbyC Column Description" size="255" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`CbyC Column Sign Key$`" type="V_String" column="6" />
+                <Field name="Multiplier" source="File: C:\Users\NXS220052\OneDrive - The University of Texas at Dallas\Disney Data.xlsx|||`CbyC Column Sign Key$`" type="Double" column="7" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="151">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="402" y="78" width="180" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Replacing inconsistencies in country Abbreviation</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="152">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1098" y="414" width="144" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Using multiplier to modify the signs on data from the G.L.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="153">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1854" y="174" width="168" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Deriving C00030 Profit  and Loss Revenue before Tax. Which gives us the Total accumulation</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="154">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1434" y="582" width="132" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Converting CbC Columns into Rows</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="155">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1938" y="450" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Adding C00030 to the CbC Column Code</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="156">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1770" y="486" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Calculating Total Revenue</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="157">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="690" y="618" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Calculating Head count</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="158">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1218" y="822" width="132" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Joining all the previously calculated flows</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="159">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1818" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Unrelated_Party_Revenue]+[Related_Party_Revenue]" field="Total Revenue" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Total Revenue = [Unrelated_Party_Revenue]+[Related_Party_Revenue]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="160">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2214" y="654" width="132" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Combining all the Financial data columns together</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="161">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2502" y="786" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Combining all the attributes to the Final CbC Report</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="162">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="918" width="96" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Workflow 3</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="163">
+      <GuiSettings>
+        <Position x="2574" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">""</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="100" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="99" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Right" />
+      <Destination ToolID="50" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="50" Connection="Left" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="50" Connection="Join" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="69" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output" />
+      <Destination ToolID="69" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="57" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output26" />
+      <Destination ToolID="64" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="140" Connection="Join" />
+      <Destination ToolID="64" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="59" Connection="Join" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="64" Connection="Join" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="63" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="63" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="62" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output26" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Join" />
+      <Destination ToolID="106" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="132" Connection="Join" />
+      <Destination ToolID="106" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Right" />
+      <Destination ToolID="59" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Left" />
+      <Destination ToolID="59" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="72" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="72" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Join" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="147" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Join" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="104" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="77" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output26" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Join" />
+      <Destination ToolID="163" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="101" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output26" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output26" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Output26" />
+      <Destination ToolID="159" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output26" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Join" />
+      <Destination ToolID="146" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="140" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="Output" />
+      <Destination ToolID="140" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="True" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="141" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="121" Connection="True" />
+      <Destination ToolID="150" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="147" Connection="True" />
+      <Destination ToolID="150" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="126" Connection="Output" />
+      <Destination ToolID="132" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="159" Connection="Output" />
+      <Destination ToolID="132" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="140" Connection="Join" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="141" Connection="Unique" />
+      <Destination ToolID="83" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="145" Connection="Output" />
+      <Destination ToolID="83" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="146" Connection="Output" />
+      <Destination ToolID="145" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="150" Connection="Output" />
+      <Destination ToolID="126" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="163" Connection="Output26" />
+      <Destination ToolID="148" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Team5_Taxation_WaltDisney</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="81a62cda-77a7-44eb-a702-00ed7d1c7fd3" />
+      <Telemetry>
+        <PreviousWorkflowId value="dfd395be-4332-4f83-9b6c-34564823d8ec" />
+        <OriginWorkflowId value="a863c071-2871-43a9-806e-cbeba9a1af65" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

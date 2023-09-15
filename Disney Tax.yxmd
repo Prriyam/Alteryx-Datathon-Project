@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Disney Data.xlsx
+Query=`FY20 Omitted Entity Data$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Company code" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+            <Field name="LE CODE" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+            <Field name="Tax Jurisdiction" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+            <Field name="Coutnry (ISO)" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+            <Field name="Entity Name" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+            <Field name="Research and Development" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Holding or Managing Intellectual Property" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Purchasing or Procurement" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Manufacturing or Production" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Sales, Marketing or Distribution" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Administrative Management or Support Services" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Provision of Services to Unrelated Parties" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Internal Group Finance" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Regulated Financial Services" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Insurance" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Holding Share or Other Equity Instruments" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Dormant" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Other" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+            <Field name="Unrelated Party Revenue" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Related Party Revenue" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Total Revenue" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Profit (Loss) before Income Tax" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Income Tax Paid" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Income Tax Accrued" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Stated Capital" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Accumulated Earnings" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Number of Employees" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Tangible Assets Other than Cash and Cash Equivalents" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Address Line 1" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+            <Field name="Province" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="Double" />
+            <Field name="Postal Code" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+            <Field name="Tax ID" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Omitted Entity Data$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Disney Data.xlsx
+Query=`FY20 Submitted CbC Report$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Company code" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="LE CODE" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Tax Jurisdiction" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Coutnry (ISO)" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Entity Name" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Research and Development" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Holding or Managing Intellectual Property" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Purchasing or Procurement" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Manufacturing or Production" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Sales, Marketing or Distribution" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Administrative Management or Support Services" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Provision of Services to Unrelated Parties" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Internal Group Finance" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Regulated Financial Services" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Insurance" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Holding Share or Other Equity Instruments" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Dormant" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Other" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Unrelated Party Revenue" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="Double" />
+            <Field name="Related Party Revenue" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="Double" />
+            <Field name="Total Revenue" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="Double" />
+            <Field name="Profit (Loss) before Income Tax" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="Double" />
+            <Field name="Income Tax Paid" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="Double" />
+            <Field name="Income Tax Accrued" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="Double" />
+            <Field name="Stated Capital" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="Double" />
+            <Field name="Accumulated Earnings" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="Double" />
+            <Field name="Number of Employees" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="Double" />
+            <Field name="Tangible Assets Other than Cash and Cash Equivalents" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="Double" />
+            <Field name="Address Line 1" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_WString" />
+            <Field name="City" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Province" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Postal Code" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+            <Field name="Tax ID" size="255" source="File: C:\Users\sdhar\OneDrive\Desktop\Datathon\Disney Use Case\Disney Data.xlsx|||`FY20 Submitted CbC Report$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="210" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="354" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Entity Name</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-02-10 11:00:42</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Newsies Sell Papers, Inc.</Operand>
+              <StartDate>2023-02-10 11:00:42</StartDate>
+              <EndDate>2023-02-10 11:00:42</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Entity Name] != "Newsies Sell Papers, Inc."</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="486" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&#xA;if [Entity Name] = &quot;Encanto, Inc.&quot; then 0&#xA;elseif [Entity Name] = &quot;Captain America's Hamburger Hut, LLC&quot; then 332446369+38104859&#xA;else [Unrelated Party Revenue]&#xA;endif" field="Unrelated Party Revenue" size="8" type="Double" />
+            <FormulaField expression="if [Entity Name] IN (&quot;Encanto, Inc.&quot;,&quot;Captain America's Hamburger Hut, LLC&quot; )then [Unrelated Party Revenue]+[Related Party Revenue]&#xA;else [Unrelated Party Revenue]&#xA;endif" field="Total Revenue" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unrelated Party Revenue = 
+if [Entity Name] = "Encanto, Inc." then 0
+elseif [Ent...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings>
+        <Position x="582" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Tax Jurisdiction","Entity Name","Address Line 1","City"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">False</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">True</Value>
+          <Value name="Drop Down (81)">title</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings>
+        <Position x="666" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Company code","LE CODE","Tax Jurisdiction","Coutnry (ISO)","Entity Name","Research and Development","Holding or Managing Intellectual Property","Purchasing or Procurement","Manufacturing or Production","Sales, Marketing or Distribution","Administrative Management or Support Services","Provision of Services to Unrelated Parties","Internal Group Finance","Regulated Financial Services","Insurance","Holding Share or Other Equity Instruments","Dormant","Other","Unrelated Party Revenue","Related Party Revenue","Total Revenue","Profit (Loss) before Income Tax","Income Tax Paid","Income Tax Accrued","Stated Capital","Accumulated Earnings","Number of Employees","Tangible Assets Other than Cash and Cash Equivalents","Address Line 1","City","State","Province","Postal Code","Tax ID"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">title</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="762" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Company code" selected="True" rename="Company Code" />
+            <SelectField field="LE CODE" selected="True" rename="LE Code" />
+            <SelectField field="Coutnry (ISO)" selected="True" rename="Country (ISO)" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#2">
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="True" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output26" />
+      <Destination ToolID="25" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output26" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Disney Tax</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3b39bbb4-5ad3-48fc-9e64-0629f55908e6" />
+      <Telemetry>
+        <PreviousWorkflowId value="cbb07a57-8dcf-4fb4-89a3-d64388707c2d" />
+        <OriginWorkflowId value="cbb07a57-8dcf-4fb4-89a3-d64388707c2d" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
