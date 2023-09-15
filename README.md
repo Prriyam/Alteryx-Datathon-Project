@@ -1,2 +1,5 @@
-# Alteryx-Datathon-Project
 Participated in the Datathon hosted by The University of Texas at Dallas and powered by industry leaders such as Alteryx, The Walt Disney Company, Goldman Sachs, NOV, and RSM. As a student who had recently earned my Alteryx Micro-Credential and Core Certification, I was eager to demonstrate my data analytics skills in a real-world setting.
+
+The Datathon was a powerful display of the impact that data analytics can have. My team and I worked tirelessly to solve complex business problems presented by The Walt Disney Company and to develop innovative solutions. I was inspired by the passion and drive of my fellow participants, and I felt proud to be a part of such a talented and dynamic group.
+
+Being part of the Datathon was a truly enriching experience. Despite the intense competition, our team put in a lot of hard work and determination, and it was a proud moment when our efforts were recognized and appreciated. I am grateful for this opportunity and for the support of Alteryx and Alteryx SparkED. This unforgettable experience will always hold a special place in my journey of developing my data skills and I will never forget the impact it had on me.
